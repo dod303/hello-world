@@ -1,6 +1,17 @@
-# hello-world
-sorry i'm late
+
+//predefined callback
+a("Hello world", b);
+
+//custom callback
+a("Hello world", function(s) {
+	console.log(s + ", how are you?");
+});
 
 
+function a(s, callback) {
+	callback(s);
+}
 
-ok go
+function b(s) {
+	console.log(s + "!!!");
+}
